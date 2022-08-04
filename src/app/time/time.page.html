@@ -1,0 +1,44 @@
+<br>
+<ion-content>
+  
+        <br>
+        <ion-button href="home" style="color:white; border-radius:30%; width: 31%;">Home</ion-button>
+        <ion-button href="time" style=  "color:white; border-radius:30%;width: 31%">Time</ion-button>
+        <ion-button href="schedule" style=  "color:white; border-radius:30%;width: 31%">Schedule</ion-button>
+        
+          
+     
+    <br>
+    <br>
+    
+    <center><ion-label><h1><b>Set Time</b></h1></ion-label></center>
+    <br>
+    <br>
+    <br>
+    <br>
+  <ion-item>
+    <ion-label position="stack"><b>Start Time</b></ion-label>
+    <ion-input type="time"></ion-input>
+    
+  </ion-item>
+<ion-item>
+  <ion-label position="stack"><b>End Time</b></ion-label>
+  <ion-input type="time"></ion-input>
+  
+</ion-item>
+<br>
+<br>
+<center><ion-button href="time">Add</ion-button></center>
+
+<ion-route url="/home" component="page-map"></ion-route>
+
+<center><ion-button id="click-trigger" style="color:white; border-radius:30%; width: 40%;">Reminder</ion-button></center>
+<ion-popover trigger="click-trigger" triggerAction="click">
+  <ng-template>
+    <ion-content class="ion-padding">Faculty: CICS<br> Course: BSIT <br> Subject: 331 <br> Room: 01 <br> Time Start: 9:00AM<br> Time End: 12:00 PM</ion-content>
+</ng-template>
+</ion-popover>
+</ion-content>
+
+
+
